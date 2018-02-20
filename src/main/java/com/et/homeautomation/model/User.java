@@ -22,6 +22,7 @@ public class User {
  this.id = id;
  }
 
+ @Column(unique=true)
  public String getUsername() {
  return username;
  }
@@ -38,7 +39,6 @@ public class User {
  this.password = password;
  }
 
- @Transient
  public String getPasswordConfirm() {
  return passwordConfirm;
  }
